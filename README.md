@@ -11,7 +11,11 @@
 Sistema de monitoramento inteligente utilizando ESP8266, API, banco de dados e integração com Google Sheets.
 
 ## 🎯 Objetivo
-Desenvolver um sistema capaz de coletar, processar, armazenar e disponibilizar dados em tempo real.
+Desenvolver um sistema capaz de:
+Coletar
+Processar
+Armazenar
+Disponibilizar dados em tempo real.
 ---
 ## 🧩 Etapas do Projeto
 
