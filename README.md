@@ -12,10 +12,10 @@ Sistema de monitoramento inteligente utilizando ESP8266, API, banco de dados e i
 
 ## 🎯 Objetivo
 Desenvolver um sistema capaz de:
-Coletar
-Processar
-Armazenar
-Disponibilizar dados em tempo real.
+-Coletar
+-Processar
+-Armazenar
+-Disponibilizar dados em tempo real.
 ---
 ## 🧩 Etapas do Projeto
 
