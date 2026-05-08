@@ -1,5 +1,5 @@
 # Sintegra
-# 🚀 Projeto Integrador - IoT Grupo_X
+# 🚀 Projeto Integrador - IoT Grupo_X videos
 
 ## 👥 Integrantes
 - Isabella Rodrigues Dalforno Maciel
