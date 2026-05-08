@@ -5,7 +5,7 @@
 - Isabella Rodrigues Dalforno Maciel
 - Isabella São José Guedes
 - Lucas Rodrigues Sousa
-- Miriã RUEDA NUNES COUTO
+- Miriã da Silva Siqueira 67
 
 ## 📌 Descrição
 Sistema de monitoramento inteligente utilizando ESP8266, API, banco de dados e integração com Google Sheets.
