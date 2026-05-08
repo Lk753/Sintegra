@@ -2,10 +2,10 @@
 # 🚀 Projeto Integrador - IoT Grupo_X
 
 ## 👥 Integrantes
-- Nome 1
-- Nome 2
-- Nome 3
-- Nome 4
+- Isabella Rodrigues Dalforno Maciel
+- Isabella São José Guedes
+- Lucas Rodrigues Sousa
+- Miriã RUEDA NUNES COUTO
 
 ## 📌 Descrição
 Sistema de monitoramento inteligente utilizando ESP8266, API, banco de dados e integração com Google Sheets.
