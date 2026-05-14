@@ -58,7 +58,7 @@ Conteúdo esperado:
 - Configuração da porta
 
 ## 🧪 Teste realizado
-Descrever o teste (ex: blink)
+<img width="520" height="347" alt="image" src="https://github.com/user-attachments/assets/211d723f-cbb8-422d-9141-ad893bd89c57" />
 
 ## 📸 Evidências
 (prints aqui ou link)
