@@ -64,6 +64,7 @@ Conteúdo esperado:
 (prints aqui ou link)
 
 ## ⚠️ Problemas encontrados
+- Na parte de achar as portas do arduino tivemos muita dificuldade
 - Durante o desenvolvimento do banco de dados
 - A equipe encontrou dificuldades na criação e organização das tabelas, principalmente na definição correta dos relacionamentos entre elas.
 __________________________________________________________________________________________________________________________________
@@ -83,8 +84,18 @@ Conteúdo esperado:
 Como a equipe chegou nas respostas
 
 ## 📊 Tabela de resultados
-| Pino | Pode usar? | Tipo | Restrição | Justificativa |
-
+| PINO | PODE USAR? | TIPO | RESTRIÇÃO |
+|------|------|------|------|
+| D0 | SIM | BOTÃO 1 | sem restrição |
+| D1 | SIM | BOTÃO 2 | sem restrição |
+| D2 | SIM | TEMPERATURA | Usado pelo DHT11 |
+| D3 | NÃO | NÃO FOI ENCONTRADO | não utilizado |
+| D4 | SIM | RGB VERMELHO | PWM recomendado para RGB |
+| D5 | SIM | BUZZER | Compatível com buzzer PWM |
+| D6 | SIM | LED VERMELHA | saída digital |
+| D7 | SIM | RGB AZUL | PWM recomendado para RGB |
+| D8 | SIM | RGB VERDE | PWM recomendado para RGB |
+| A0 | SIM | POTENCIÔMETRO | Apenas entrada analógica |
 ## 🚨 Problemas encontrados
 Descrever comportamentos inesperados
 
