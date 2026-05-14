@@ -64,7 +64,8 @@ Descrever o teste (ex: blink)
 (prints aqui ou link)
 
 ## ⚠️ Problemas encontrados
-Descrever erros e soluções
+- Durante o desenvolvimento do banco de dados
+- A equipe encontrou dificuldades na criação e organização das tabelas, principalmente na definição correta dos relacionamentos entre elas.
 __________________________________________________________________________________________________________________________________
 
 02_Investigacao_Pinos/  
