@@ -35,7 +35,7 @@ Registros visuais e testes realizados
 Controle de mudanças e evolução do projeto
 ---
 ## 🔁 Evolução do Projeto
-Ver pasta: 05_Atualizacoes
+Ver pasta: [05_Atualizacoes](https://github.com/Lk753/Sintegra/tree/main/Atualiza%C3%A7%C3%B5es.md)
 ---
 ## 📸 Evidências
 Ver pasta: 04_Evidencias
