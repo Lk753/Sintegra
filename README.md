@@ -77,8 +77,11 @@ Conteúdo esperado:
 # 🔌 Investigação das Portas
 
 ## 🌐 Fontes utilizadas
-- Link 1
-- Link 2
+- [Link 1 ](https://www.akamai.com/pt/glossary/what-is-the-client-server-model)
+- [Link 2](https://www.techtarget.com/searchnetworking/definition/TCP-IP)
+- [Link 3](https://aws.amazon.com/pt/what-is/api/)
+- [Link 4](https://aws.amazon.com/pt/what-is/iot/)
+- [Link 5](https://blog.lyram2m.com.br/como-sensores-e-dispositivos-iot-se-comunicam-na-rede/)
 
 ## 🔍 Processo de investigação
 Como a equipe chegou nas respostas
