@@ -124,6 +124,7 @@ Conteúdo esperado:
 
 ## 📊 Regras definidas
 | Condição | Estado | Ação |
+|---|---|---|
 | Temperatura alta | ALERTA | Aciona buzzer |
 | Botão pressionado | ATIVO | Liga LED |
 | Umidade baixa | ATENÇÃO | Envia alerta |
@@ -133,12 +134,22 @@ Conteúdo esperado:
 Entrada → Processamento → Decisão → Ação → API
 
 ## 🧩 Variáveis
-- Temperatura
-- Umidade
-- Rotação
+- Temperatura → Capturada pelo sensor DHT11
+- Umidade → Capturada pelo sensor DHT11
+- Rotação → Controle ajustado por potenciômetro
+- EstadoBotao → Verifica acionamento manual
+- EstadoLED → Controle visual do sistema
+
+---
 
 ## 💡 Justificativas
-Explicar decisões do grupo
+
+- O ESP8266 foi escolhido por possuir Wi-Fi integrado.
+- O Google Sheets foi utilizado pela facilidade de visualização dos dados.
+- O DHT11 foi escolhido por ser simples e adequado para testes acadêmicos.
+- LEDs e buzzer foram usados para sinalização visual e sonora.
+
+---
 
 __________________________________________________________________________________________________________________________________
 
