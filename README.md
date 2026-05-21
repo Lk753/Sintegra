@@ -151,6 +151,14 @@ Entrada → Processamento → Decisão → Ação → API
 
 ---
 
+# 📌 Melhorias realizadas
+- Organização das pastas do projeto
+- Correção dos pinos utilizados
+- Otimização da leitura dos sensores
+- Melhorias na estabilidade da conexão Wi-Fi
+- Integração inicial com API e banco de dados
+
+
 __________________________________________________________________________________________________________________________________
 
 04_Evidencias/  
