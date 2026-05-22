@@ -71,9 +71,12 @@ Conteúdo esperado:
 (prints aqui ou link)
 
 ## ⚠️ Problemas encontrados
-- Na parte de achar as portas do arduino tivemos muita dificuldade
-- Durante o desenvolvimento do banco de dados
-- A equipe encontrou dificuldades na criação e organização das tabelas, principalmente na definição correta dos relacionamentos entre elas.
+
+- Algumas portas apresentaram comportamento inesperado durante o boot.
+- O pino D3 apresentou conflitos de inicialização.
+- Houve dificuldades na comunicação com o banco de dados.
+- Ocorreram erros de conexão Wi-Fi durante testes.
+- Problemas na leitura inicial do sensor DHT11.
 __________________________________________________________________________________________________________________________________
 
 02_Investigacao_Pinos/  
@@ -124,9 +127,10 @@ Arquivo sugerido:   modelagem.md
 
 Conteúdo esperado:
 
-# 🧠 Modelagem do Sistema
+🧠 Modelagem do Sistema
 
-## 📊 Regras definidas
+📊 Regras definidas
+ 
 | Condição            | Estado    | Ação            |
 |---------------------|-----------|-----------------|
 | Temperatura alta    | ALERTA    | Aciona buzzer   |
@@ -134,28 +138,32 @@ Conteúdo esperado:
 | Umidade baixa       | ATENÇÃO   | Envia alerta    |
 | Sensor desconectado | ERRO      | Mensagem na API |
 
-## 🔄 Fluxo
+ 🔄 Fluxo
+
 Entrada → Processamento → Decisão → Ação → API
 
-## 🧩 Variáveis
+🧩 Variáveis
+
 - Temperatura → Capturada pelo sensor DHT11
 - Umidade → Capturada pelo sensor DHT11
 - Rotação → Controle ajustado por potenciômetro
 - EstadoBotao → Verifica acionamento manual
 - EstadoLED → Controle visual do sistema
 
+
 ---
 
-## 💡 Justificativas
+💡 Justificativas
 
 - O ESP8266 foi escolhido por possuir Wi-Fi integrado.
 - O Google Sheets foi utilizado pela facilidade de visualização dos dados.
 - O DHT11 foi escolhido por ser simples e adequado para testes acadêmicos.
-- LEDs e buzzer foram usados para sinalização visual e sonora.
+- LEDs e buzzer foram usados para sinalização visual e sonora..
 
 ---
 
-# 📌 Melhorias realizadas
+📌 Melhorias realizadas
+
 - Organização das pastas do projeto
 - Correção dos pinos utilizados
 - Otimização da leitura dos sensores
