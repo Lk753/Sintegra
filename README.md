@@ -95,18 +95,18 @@ Conteúdo esperado:
 
 
 ## 📊 Tabela de resultados
-| PINO | PODE USAR? | TIPO | RESTRIÇÃO |
-|------|------|------|------|
-| D0 | SIM | BOTÃO 1 | sem restrição |
-| D1 | SIM | BOTÃO 2 | sem restrição |
-| D2 | SIM | TEMPERATURA | Usado pelo DHT11 |
-| D3 | NÃO | NÃO FOI ENCONTRADO | não utilizado |
-| D4 | SIM | RGB VERMELHO | PWM recomendado para RGB |
-| D5 | SIM | BUZZER | Compatível com buzzer PWM |
-| D6 | SIM | LED VERMELHA | saída digital |
-| D7 | SIM | RGB AZUL | PWM recomendado para RGB |
-| D8 | SIM | RGB VERDE | PWM recomendado para RGB |
-| A0 | SIM | POTENCIÔMETRO | Apenas entrada analógica |
+| PINO | PODE USAR? | TIPO               | RESTRIÇÃO                 |
+|------|------------|--------------------|---------------------------|
+| D0   | SIM        | BOTÃO 1            | sem restrição             |
+| D1   | SIM        | BOTÃO 2            | sem restrição             |
+| D2   | SIM        | TEMPERATURA        | Usado pelo DHT11          |
+| D3   | NÃO        | NÃO FOI ENCONTRADO | não utilizado             |
+| D4   | SIM        | RGB VERMELHO       | PWM recomendado para RGB  |
+| D5   | SIM        | BUZZER             | Compatível com buzzer PWM |
+| D6   | SIM        | LED VERMELHA       | saída digital             |
+| D7   | SIM        | RGB AZUL           | PWM recomendado para RGB  |
+| D8   | SIM        | RGB VERDE          | PWM recomendado para RGB  |
+| A0   | SIM        | POTENCIÔMETRO      | Apenas entrada analógica  |
 
 ## 🚨 Problemas encontrados
 - Algumas portas apresentaram comportamento inesperado durante o boot.
@@ -127,12 +127,12 @@ Conteúdo esperado:
 # 🧠 Modelagem do Sistema
 
 ## 📊 Regras definidas
-| Condição | Estado | Ação |
-|---|---|---|
-| Temperatura alta | ALERTA | Aciona buzzer |
-| Botão pressionado | ATIVO | Liga LED |
-| Umidade baixa | ATENÇÃO | Envia alerta |
-| Sensor desconectado | ERRO | Mensagem na API |
+| Condição            | Estado    | Ação            |
+|---------------------|-----------|-----------------|
+| Temperatura alta    | ALERTA    | Aciona buzzer   |
+| Botão pressionado   | ATIVO     | Liga LED        |
+| Umidade baixa       | ATENÇÃO   | Envia alerta    |
+| Sensor desconectado | ERRO      | Mensagem na API |
 
 ## 🔄 Fluxo
 Entrada → Processamento → Decisão → Ação → API
