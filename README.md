@@ -190,6 +190,7 @@ Arquivo sugerido:   atualizacoes.md
 
 Conteúdo essencial:
 # 🔁 Atualizações do Projeto
+- Pasta de [05_Atualizacoes](https://github.com/Lk753/Sintegra/tree/main/Atualiza%C3%A7%C3%B5es.md)
 
 ## v1.0
 - Configuração inicial
