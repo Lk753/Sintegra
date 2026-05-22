@@ -20,19 +20,19 @@ Desenvolver um sistema capaz de:
 ________________________________________________
 ## 🧩 Etapas do Projeto
 
-### 01 - Configuração
+ 01 - Configuração
 Ambiente configurado e validado
 
-### 02 - Investigação de Pinos
+02 - Investigação de Pinos
 Levantamento e análise das portas do ESP8266
 
-### 03 - Modelagem do Sistema
+03 - Modelagem do Sistema
 Definição das regras e comportamento do sistema
 
-### 04 - Evidências
+ 04 - Evidências
 Registros visuais e testes realizados
 
-### 05 - Atualizações
+05 - Atualizações
 Controle de mudanças e evolução do projeto
 __________________________________________________________
 
