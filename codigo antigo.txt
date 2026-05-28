@@ -1,0 +1,93 @@
+#include <ESP8266WiFi.h>
+#include <ESP8266HTTPClient.h>
+#include <WiFiClient.h>
+
+// --- CONFIGURAÇÃO DO WIFI ---
+const char* ssid     = "Cyber-Projeto";  
+const char* password = "Senai@122";   
+
+// --- CONFIGURAÇÃO DA API (IP ATUALIZADO DO SEU PC) ---
+String servidor = "http://10.106.202.3:8000/temperatura";
+
+// Token de segurança idêntico ao da API Flask
+const char* token_secreto = "arduinoplayboyzin";
+
+void setup() {
+  Serial.begin(115200);
+  delay(1000);
+  
+  Serial.println("\n--- INICIANDO CONEXÃO WIFI ---");
+  WiFi.begin(ssid, password);
+
+  // Tenta conectar ao WiFi do laboratório
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\n✅ Wi-Fi conectado com sucesso!");
+  Serial.print("IP do ESP8266: ");
+  Serial.println(WiFi.localIP());
+
+  // ----------------------------------------------------
+  // REGISTRO DE REINICIALIZAÇÃO DO SISTEMA (Logs de Boot)
+  // ----------------------------------------------------
+  // O ESP avisa a API que acabou de ligar/reiniciar
+  enviarDadosParaAPI("ESP8266_SISTEMA", 0); 
+}
+
+void loop() {
+  // Só tenta enviar se o WiFi estiver conectado
+  if (WiFi.status() == WL_CONNECTED) {
+    
+    // --- DADOS PARA ENVIO (Simulados para teste inicial) ---
+    // Substitua pelo valor real do seu sensor quando for apresentar
+    String sensorID = "ESP8266_Senai";
+    float valorTemperatura = 24.8; 
+
+    // Envia o dado de temperatura usando a função segura
+    enviarDadosParaAPI(sensorID, valorTemperatura);
+
+  } else {
+    Serial.println("❌ WiFi desconectado. Tentando reconectar...");
+    WiFi.begin(ssid, password);
+  }
+
+  // Intervalo de 20 segundos para não sobrecarregar a planilha
+  delay(20000); 
+}
+
+// ======================================================
+// FUNÇÃO AUXILIAR PARA ENVIO SEGURO (MANDA O TOKEN)
+// ======================================================
+void enviarDadosParaAPI(String sensor, float valor) {
+  WiFiClient client;
+  HTTPClient http;
+
+  // Montando a URL juntando os dados e o TOKEN secreto exigido pela API
+  String urlEnvio = servidor + "?sensor=" + sensor + "&temperatura=" + String(valor) + "&token=" + String(token_secreto);
+
+  Serial.print("\n[IoT] Enviando para: ");
+  Serial.println(urlEnvio);
+
+  // Inicia a requisição HTTP GET
+  http.begin(client, urlEnvio);
+  int httpResponseCode = http.GET();
+
+  if (httpResponseCode > 0) {
+    Serial.print("[API] Resposta do Servidor (Código HTTP): ");
+    Serial.println(httpResponseCode); 
+    
+    if (httpResponseCode == 200) {
+      Serial.println("✅ Sucesso: Dados gravados no Google Sheets!");
+    } else if (httpResponseCode == 401) {
+      Serial.println("❌ Erro de Segurança: Token rejeitado pela API Flask!");
+    }
+  } else {
+    Serial.print("❌ Erro de comunicação de rede. Código: ");
+    Serial.println(httpResponseCode);
+    Serial.println("Dica: Verifique se o Firewall do Windows está bloqueando a porta 5000.");
+  }
+
+  http.end(); // Libera a conexão para o próximo envio
+}
