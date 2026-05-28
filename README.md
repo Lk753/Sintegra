@@ -87,12 +87,12 @@ Conteúdo esperado:
 # 🔌 Investigação das Portas
 
 ## 🌐 Fontes utilizadas
-- [Link 1](https://www.akamai.com/pt/glossary/what-is-the-client-server-model)
-- [Link 2](https://www.techtarget.com/searchnetworking/definition/TCP-IP)
-- [Link 3](https://aws.amazon.com/pt/what-is/api/)
-- [Link 4](https://aws.amazon.com/pt/what-is/iot/)
-- [Link 5](https://blog.lyram2m.com.br/como-sensores-e-dispositivos-iot-se-comunicam-na-rede/)
-- [Link 6](https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/)
+- [O que é modelo cliente/servidor](https://www.akamai.com/pt/glossary/what-is-the-client-server-model)
+- [O que é TCP/IP](https://www.techtarget.com/searchnetworking/definition/TCP-IP)
+- [O que é API](https://aws.amazon.com/pt/what-is/api/)
+- [O que é IoT](https://aws.amazon.com/pt/what-is/iot/)
+- [Como sensores e dispositivos iot se comunicam na rede](https://blog.lyram2m.com.br/como-sensores-e-dispositivos-iot-se-comunicam-na-rede/)
+- [como identificar os pinos esp8266](https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/)
 
 ## 🔍 Processo de investigação
 
