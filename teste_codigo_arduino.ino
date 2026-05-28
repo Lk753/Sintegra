@@ -1,0 +1,28 @@
+int ledVermelho = D6;   // Pino do LED
+int botaoTeste = D0;    // Pino do Botão
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(ledVermelho, OUTPUT);
+
+  pinMode(botaoTeste, INPUT_PULLUP);
+
+  Serial.println("Sistema Pronto. Pressione o botao para ativar.");
+}
+
+void loop() {
+  // No modo INPUT_PULLUP, LOW significa "Apertado"
+  int estadoBotao = digitalRead(botaoTeste);
+
+  if (estadoBotao == LOW) {
+    // Enquanto estiver segurando o botão:
+    digitalWrite(ledVermelho, HIGH);
+    Serial.println(">>> SENSOR ATIVADO PELO BOTAO <<<");
+  } else {
+    // Quando soltar o botão:
+    digitalWrite(ledVermelho, LOW);
+  }
+
+  delay(500); // Tempo para fazer uma nova leitura
+}
