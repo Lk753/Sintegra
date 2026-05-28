@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "projetotemperaturaesp-496412",
+  "private_key_id": "776646a75384d52876ea33614daad347dc7af195",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDIyv1+Uunb5O57\n1hR6sHrnU8cTMT5sY7EYNzIXztmdzqIA0pfq4TD5PM6LuO5/JnRafscEhqXSWGAz\nBKqoWSnnSFMEpBJ/Gj1j+5tu+sk2u8n6bmStnbV8qU0zYj/C0ump7JCCq7Qt1rFB\nSRifT78Ofprhb7tn0zui/X+j5QNwMwc+/POExHXctR4IYQE9DOEroSYchT3YuFDr\nSe4Hybq7VrxIb0SgS197Q4aS5sv0hbnr35c0k5a4oV1ESY937I5Z9Ajm1idMFMnd\nhZ0bq+UKPIkjh3MMVJZ8Nye+Dr1lQlmVB4miKVZPzBZhXkJkQRl82NzQBTcwgqYq\nGyS27ixhAgMBAAECggEAFlNBj6Xa5CzmWkUBhmmwZJ+TQx5GzUjhVCqw6mZAmnPy\n3coMg5xRtGiPI4hmliMZrUUqziVFcyeJ3KpQakLtro5DUsEGYHTzrfX4AIUoUapc\nCPj0vzwJhYiScZvjMH+AZPkNUUYTlMQp9bMRpob4nH01rcqdSOw61YK/iiLIuNT0\n6iJgIFjbSoYYtBWxHOt3VlKHvmAR1LwHBDZHEno/8QbRNKbLjVb2ny0V+uUHKKuJ\nAYjWMpdTdgV2Ljot1Ot+7AOVwkuH6jrYtmsq09GjntECyYgXVW424q7YBvXNjH+8\nxVpFFQtNBlH07MNN5hiUrBR4ngEGQFqv0zJ6vZiHEQKBgQD8z03/KXkYy72vNGpk\nxTH0i61aPw3v40EpqtF1pWUvU3KbJ/OqhlXRz3cA5+xeWen7D0lzI5h7DQKUKtyl\n2AOoWtZnY3cQhb7PvjX5mFkLtzyELg/a7neip6PEk+M7eC9KxfSDYrCeOLEmRKQL\nR2ucDucuZsOlbzjNprjl24X72QKBgQDLU6V+qh09Ip/bl1HnevzqHssRI/TppUNy\niCgK4ry2OOtDChYChv3a0Q7j6S37nEC2MLmZR2QiV5PsLlfFCioghIw+eIOgv17X\nV0Ew0v75CFtize4ZnQgKNFaVZubrlaNEK++sw4mvgURMLWg8vL94XWIJPxnp43lt\nFTUD0syHyQKBgQDjyT3zzMCJ8PnGZan/hhZOy5O0nt/F57ONAZadNBuJmtzGpCbO\n3R9yXkZRkKbPFKDYT5vUnJwFM2HBcyVAYPRauw44NczQHFIjCLXFYNnKzp0+U+qB\nTyCIdBgBRWcW7GFgNCDuSPvudBJZ8rsEVqPFB0CR9JIP+7jow3IR2cxNcQKBgE0+\nBLP+6kasXbBtZwcaWPSUKC7lywfr6ZicEyI3ittq+i0oqr3hDJVRMGfy0K4yaP8N\nuaR6U5ccUCy8WkmXl/Nsh17AJ7ksmloSYsiqj4SJ4TXC575BQqmlwnLVecpruW+P\nhWjLjAXphMmvwla4mcCfMTw0BaMt8JY5JT/DmEHJAoGBAOyIt1pxMKRmfR/1vLSd\nLhQ7Dxahj4YtDPL+QTGCHKqZ3injpd4vGE0K5m6qjE76FHNkeqk2DMIcCKDc6+zM\n6jk70VMtxg/EUWFfcdfk098QYgse9vDaLiIrGZ2fVJskZQ8LWEHOGynnKubBRdzE\n27XCusEb8n9jSfOVwoHoS0u+\n-----END PRIVATE KEY-----\n",
+  "client_email": "projetotemperaturaesp@projetotemperaturaesp-496412.iam.gserviceaccount.com",
+  "client_id": "108857852845085276316",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/projetotemperaturaesp%40projetotemperaturaesp-496412.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
