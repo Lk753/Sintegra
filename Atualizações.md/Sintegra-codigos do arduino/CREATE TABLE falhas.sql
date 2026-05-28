@@ -1,6 +1,0 @@
-CREATE TABLE falhas (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    Horario DATETIME DEFAULT CURRENT_TIMESTAMP,
-    Origem VARCHAR(50),
-    erro_descricao VARCHAR(255)
-);
