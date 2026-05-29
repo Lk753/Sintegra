@@ -92,6 +92,18 @@ ________________________________________________________________________________
 | D8   | RGB VERDE           | 
  
 Arquivo sugerido:  
+| PINO | PODE USAR? | TIPO               | RESTRIÇÃO                 |
+|------|------------|--------------------|---------------------------|
+| D0   | SIM        | BOTÃO 1            | sem restrição             |
+| D1   | SIM        | BOTÃO 2            | sem restrição             |
+| D2   | SIM        | TEMPERATURA        | Usado pelo DHT11          |
+| D3   | NÃO        | NÃO FOI ENCONTRADO | não utilizado             |
+| D4   | SIM        | RGB VERMELHO       | PWM recomendado para RGB  |
+| D5   | SIM        | BUZZER             | Compatível com buzzer PWM |
+| D6   | SIM        | LED VERMELHA       | saída digital             |
+| D7   | SIM        | RGB AZUL           | PWM recomendado para RGB  |
+| D8   | SIM        | RGB VERDE          | PWM recomendado para RGB  |
+| A0   | SIM        | POTENCIÔMETRO      | Apenas entrada analógica  |
 
 
 
@@ -106,20 +118,8 @@ Arquivo sugerido:
 
 ## 🔍 Processo de investigação
 
-
-## 📊 Tabela de resultados
-| PINO | PODE USAR? | TIPO               | RESTRIÇÃO                 |
-|------|------------|--------------------|---------------------------|
-| D0   | SIM        | BOTÃO 1            | sem restrição             |
-| D1   | SIM        | BOTÃO 2            | sem restrição             |
-| D2   | SIM        | TEMPERATURA        | Usado pelo DHT11          |
-| D3   | NÃO        | NÃO FOI ENCONTRADO | não utilizado             |
-| D4   | SIM        | RGB VERMELHO       | PWM recomendado para RGB  |
-| D5   | SIM        | BUZZER             | Compatível com buzzer PWM |
-| D6   | SIM        | LED VERMELHA       | saída digital             |
-| D7   | SIM        | RGB AZUL           | PWM recomendado para RGB  |
-| D8   | SIM        | RGB VERDE          | PWM recomendado para RGB  |
-| A0   | SIM        | POTENCIÔMETRO      | Apenas entrada analógica  |
+Foram feitos diversos testes antes de realmente chegarmos em um resultado certo, não tínhamos ideia de como poderia ser feito para que começássemos a identificar os componentes. 
+O primeiro componente que identificamos foi o segundo botão de acionamento e logo em seguida o led vermelho. Para encontrar ele foi feito um teste utilizando os pinos D1 para o botão e D6 para o led vermelho, para que ficasse mais fácil foi feito uma pesquisa para saber como identificar no ESP8266.
 
 ## 🚨 Problemas encontrados
 - Algumas portas apresentaram comportamento inesperado durante o boot.
