@@ -7,10 +7,11 @@ _________________________________________________________________________
 - Lucas Rodrigues Sousa
 - Miriã da Silva Siqueira
 __________________________________________________________________________ 
-## 📌 Descrição
+##  Descrição 📌
 - Sistema de monitoramento inteligente utilizando ESP8266, API, banco de dados e integração com Google Sheets.
 
-## 🎯 Objetivo
+## Objetivo
+
 Desenvolver um sistema capaz de:
 - Coletar
 - Processar
@@ -18,7 +19,7 @@ Desenvolver um sistema capaz de:
 - Disponibilizar dados em tempo real.
 
 ________________________________________________
-## 🧩 Etapas do Projeto
+## Etapas do Projeto 🧩
 
  01 - Configuração
 Ambiente configurado e validado
@@ -36,14 +37,14 @@ Registros visuais e testes realizados
 Controle de mudanças e evolução do projeto
 __________________________________________________________
 
-## 🔁 Evolução do Projeto
+## Evolução do Projeto
 Ver pasta: [05_Atualizacoes](https://github.com/Lk753/Sintegra/tree/8e74015cb4571359a321730dbcd30e30fd371157/atualiza%C3%A7%C3%B5es.md)
 
 ---------
-## 📸 Evidências
+##  Evidências 📸
 Ver pasta: [04_Evidencias](https://github.com/Lk753/Sintegra/tree/39dcf510adb5ebcf8d5ec3e36a9b08835b26131c/Prints.md)
 
-## 🧠 Aprendizados
+##  Aprendizados 🧠
 - Aprendemos a configurar o ESP8266 na IDE Arduino.
 - Entendemos o funcionamento das portas GPIO.
 - Tivemos contato com APIs e integração com banco de dados.
