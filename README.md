@@ -1,7 +1,7 @@
 # Sintegra
-# 🚀 Projeto Integrador - IoT Sintegra 
+# Projeto Integrador - IoT Sintegra 🚀 
 _________________________________________________________________________
-## 👥 Integrantes
+## Integrantes 👥
 - Isabella Rodrigues Dalforno Maciel
 - Isabella São José Guedes
 - Lucas Rodrigues Sousa
