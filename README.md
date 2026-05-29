@@ -50,19 +50,19 @@ Ver pasta: [04_Evidencias](https://github.com/Lk753/Sintegra/tree/39dcf510adb5eb
 - Tivemos contato com APIs e integração com banco de dados.
 - Aprendemos a enviar dados para o Google Sheets.
 ___________________________________________________________________________________________________________________________________
-# 🖥️ Configuração do Ambiente
+#  Configuração do Ambiente 🖥️
 
-## 🛠️ Ambientes de Desenvolvimento (IDEs)
+## Ambientes de Desenvolvimento (IDEs)
    
 - Utilizamos o arduino IDE para escrever, compilar e gravar o código no microcontrolador ESP8266.
 - foi Utilizado o vscode para o desenvolvimento do script em Python e da interface do site.
 
-## 🐍 Linguagens e Ferramentas de Software
+##  Linguagens e Ferramentas de Software
    
 - a Linguagem que utilizamos foi o python para criar o script que recebe os dados do ESP8266 e gerencia as integrações.
 - usamos o mysql para criar o Banco de dados para armazenamento histórico dos dados.
 
-## 📦 Instalação de Dependências e Bibliotecas
+## Instalação de Dependências e Bibliotecas
 
 Para o Python conversar com o ESP8266, com o MySQL e com o Google Sheets, foram usadas as seguintes bibliotecas e os comandos
  
@@ -85,10 +85,10 @@ python > Google Sheets
 - Seleção da placa
 - Configuração da porta
 
-## 🧪 Teste realizado
+##  Teste realizado
 <img width="520" height="347" alt="image" src="https://github.com/user-attachments/assets/211d723f-cbb8-422d-9141-ad893bd89c57" />
 
-## ⚠️ Problemas encontrados
+## Problemas encontrados ⚠️
 
 - Algumas portas apresentaram comportamento inesperado durante o boot.
 - O pino D3 apresentou conflitos de inicialização.
@@ -97,7 +97,7 @@ python > Google Sheets
 - Problemas na leitura inicial do sensor DHT11.
 __________________________________________________________________________________________________________________________________
 
-# 🔌 Investigação das Portas
+#  Investigação das Portas 🔌
 
 | PINO | PODE USAR? | TIPO               | RESTRIÇÃO                 |
 |------|------------|--------------------|---------------------------|
@@ -113,7 +113,7 @@ ________________________________________________________________________________
 | A0   | SIM        | POTENCIÔMETRO      | Apenas entrada analógica  |
 
 
-## 🌐 Fontes utilizadas
+## Fontes utilizadas 🌐
 - [O que é modelo cliente/servidor](https://www.akamai.com/pt/glossary/what-is-the-client-server-model)
 - [O que é TCP/IP](https://www.techtarget.com/searchnetworking/definition/TCP-IP)
 - [O que é API](https://aws.amazon.com/pt/what-is/api/)
@@ -121,29 +121,29 @@ ________________________________________________________________________________
 - [Como sensores e dispositivos iot se comunicam na rede](https://blog.lyram2m.com.br/como-sensores-e-dispositivos-iot-se-comunicam-na-rede/)
 - [como identificar os pinos esp8266](https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/)
 
-## 🔍 Processo de investigação
+##  Processo de investigação 🔍 
 
 Foram feitos diversos testes antes de realmente chegarmos em um resultado certo, não tínhamos ideia de como poderia ser feito para que começássemos a identificar os componentes. 
 O primeiro componente que identificamos foi o segundo botão de acionamento e logo em seguida o led vermelho. Para encontrar ele foi feito um teste utilizando os pinos D1 para o botão e D6 para o led vermelho, para que ficasse mais fácil foi feito uma pesquisa para saber como identificar no ESP8266.
 
-## 🚨 Problemas encontrados
+##  Problemas encontrados 🚨
 - Algumas portas apresentaram comportamento inesperado durante o boot.
 - O pino D3 apresentou conflitos de inicialização.
 - Houve dificuldades na comunicação com o banco de dados.
 - Ocorreram erros de conexão Wi-Fi durante testes.
 - Problemas na leitura inicial do sensor DHT11.
 
-## 📸 Evidências
+##  Evidências 📸
 (print/foto/teste)
 __________________________________________________________________________________________________________________________________
+ 
+##  Modelagem do Sistema 🧠
 
-## 🧠 Modelagem do Sistema
-
-## 1. 🗺️ Arquitetura Geral do Sistema
+## 1. Arquitetura Geral do Sistema 🗺️
 
   O sistema é baseado no microcontrolador ESP8266, responsável por realizar a leitura dos dados de temperatura e umidade. Esses dados são enviados para um script em Python, que atua como intermediário, realizando o armazenamento e a persistência das informações em um banco de dados MySQL e, simultaneamente, integrando e atualizando as planilhas do Google Sheets. Por fim, o Google Sheets serve como fonte de dados para um site (interface web), onde os resultados de temperatura e umidade são exibidos em tempo real para o usuário.
  
-## 3. 🖥️ Modelagem de Software (Fluxograma / Máquina de Estados)
+## 3. Modelagem de Software (Fluxograma / Máquina de Estados)
 
 🅰️ Lógica do ESP8266 e do Software (Python, MySQL e Google Sheets)
 
@@ -166,7 +166,7 @@ ________________________________________________________________________________
 | Umidade baixa       | ATENÇÃO   | Envia alerta    |
 | Sensor desconectado | ERRO      | Mensagem na API |
 
- ## 🔄 Fluxo
+ ## Fluxo 🔄
 
 Entrada → Processamento → Decisão → Ação → API
 
@@ -177,7 +177,7 @@ Detalhes das Etapas
 - Ação: O Python executa um comando de inserção (INSERT) para salvar os dados recebidos no banco de dados local MySQL.
 - API: O Python aciona as APIs do Google (Sheets e Drive) via gspread para enviar os dados para a planilha na nuvem, atualizando automaticamente o site integrado que exibe os gráficos para o usuário.
 
-## 🧩 Variáveis
+## Variáveis
 
 - Temperatura → Capturada pelo sensor DHT11
 - Umidade → Capturada pelo sensor DHT11
@@ -188,7 +188,7 @@ Detalhes das Etapas
 
 ---
 
-💡 Justificativas
+ ## Justificativas
 
 - O ESP8266 foi escolhido por possuir Wi-Fi integrado.
 - O Google Sheets foi utilizado pela facilidade de visualização dos dados.
@@ -197,7 +197,7 @@ Detalhes das Etapas
 
 ---
 
-📌 Melhorias realizadas
+## 💡 Melhorias realizadas
 
 - Organização das pastas do projeto
 - Correção dos pinos utilizados
