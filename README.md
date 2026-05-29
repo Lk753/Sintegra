@@ -138,11 +138,11 @@ ________________________________________________________________________________
 
 ## 🧠 Modelagem do Sistema
 
-1. 🗺️ Arquitetura Geral do Sistema
+## 1. 🗺️ Arquitetura Geral do Sistema
 
   O sistema é baseado no microcontrolador ESP8266, responsável por realizar a leitura dos dados de temperatura e umidade. Esses dados são enviados para um script em Python, que atua como intermediário, realizando o armazenamento e a persistência das informações em um banco de dados MySQL e, simultaneamente, integrando e atualizando as planilhas do Google Sheets. Por fim, o Google Sheets serve como fonte de dados para um site (interface web), onde os resultados de temperatura e umidade são exibidos em tempo real para o usuário.
  
-3. 🖥️ Modelagem de Software (Fluxograma / Máquina de Estados)
+## 3. 🖥️ Modelagem de Software (Fluxograma / Máquina de Estados)
 
 🅰️ Lógica do ESP8266 e do Software (Python, MySQL e Google Sheets)
 
@@ -170,7 +170,11 @@ ________________________________________________________________________________
 Entrada → Processamento → Decisão → Ação → API
 
 Detalhes das Etapas
-
+- Entrada: O sensor DHT11 realiza a leitura física da temperatura e da umidade do ambiente.
+- Processamento: O microcontrolador ESP8266 recebe esses sinais analógicos/digitais, converte em variáveis numéricas estruturadas e envia para o script Python através de uma requisição de rede (via Flask).
+- Decisão: O script Python analisa as informações recebidas, valida os dados (carimbando com a data e hora atual) e verifica se há necessidade de disparar algum alerta ou apenas registrar o histórico.
+- Ação: O Python executa um comando de inserção (INSERT) para salvar os dados recebidos no banco de dados local MySQL.
+- API: O Python aciona as APIs do Google (Sheets e Drive) via gspread para enviar os dados para a planilha na nuvem, atualizando automaticamente o site integrado que exibe os gráficos para o usuário.
 
 🧩 Variáveis
 
