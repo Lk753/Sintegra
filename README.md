@@ -77,21 +77,6 @@ ________________________________________________________________________________
 
 # 🔌 Investigação das Portas
 
-02_Investigacao_Pinos/  
-
-| PINO |        TIPO         |        
-|------|---------------------|
-| D0   | BOTÃO 1             | 
-| D1   | BOTÃO 2             | 
-| D2   | TEMPERATURA         |
-| D3   | NÃO FOI ENCONTRADO  |
-| D4   |  RGB VERMELHO       |
-| D5   | BUZZER              | 
-| D6   | LED VERMELHA        | 
-| D7   | RGB AZUL            | 
-| D8   | RGB VERDE           | 
- 
-Arquivo sugerido:  
 | PINO | PODE USAR? | TIPO               | RESTRIÇÃO                 |
 |------|------------|--------------------|---------------------------|
 | D0   | SIM        | BOTÃO 1            | sem restrição             |
@@ -132,12 +117,15 @@ O primeiro componente que identificamos foi o segundo botão de acionamento e lo
 (print/foto/teste)
 __________________________________________________________________________________________________________________________________
 
-03_Modelagem_Sistema/  
-Arquivo sugerido:   modelagem.md
-
-Conteúdo esperado:
-
 🧠 Modelagem do Sistema
+
+## 1. 🗺️ Arquitetura Geral do Sistema
+
+  O sistema é baseado no microcontrolador ESP8266, responsável por realizar a leitura dos dados de temperatura e umidade. Esses dados são enviados para um script em Python, que atua como intermediário, realizando o armazenamento e a persistência das informações em um banco de dados MySQL e, simultaneamente, integrando e atualizando as planilhas do Google Sheets. Por fim, o Google Sheets serve como fonte de dados para um site (interface web), onde os resultados de temperatura e umidade são exibidos em tempo real para o usuário.
+ 
+3. 🖥️ Modelagem de Software (Fluxograma / Máquina de Estados)
+
+
 
 📊 Regras definidas
  
