@@ -190,10 +190,14 @@ Detalhes das Etapas
 
  ## Justificativas
 
-- O ESP8266 foi escolhido por possuir Wi-Fi integrado.
-- O Google Sheets foi utilizado pela facilidade de visualização dos dados.
+A escolha dos componentes de hardware e das ferramentas de software foi fundamentada em critérios de custo-benefício, confiabilidade, escalabilidade e segurança. 
+
+- o ESP8266 foi escolhido porque possui Wi-Fi nativo, baixo custo e é ideal para projetos de IoT sem precisar de peças extras.
+- o python foi utilizado por ter uma linguagem rápida, leve e direta para criar um servidor local estável sem pesar no computador.
+- utilizamos o mysql porque ele garante que os dados fiquem salvos em segurança no computador mesmo se a internet cair.
+- google sheets foi usado por ser uma nuvem gratuita e fácil de integrar que serve como banco de dados direto para alimentar o site em tempo real.
 - O DHT11 foi escolhido por ser simples e adequado para testes acadêmicos.
-- LEDs e buzzer foram usados para sinalização visual e sonora..
+- LEDs e buzzer foram usados para sinalização visual e sonora.
 
 ---
 
