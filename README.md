@@ -41,8 +41,7 @@ Ver pasta: [05_Atualizacoes](https://github.com/Lk753/Sintegra/tree/8e74015cb457
 
 ---------
 ## 📸 Evidências
-Ver pasta: [04_Evidencias](https://github.com/Lk753/Sintegra/tree/ec4f372e1bf345077e9bc990f709b8ee2c451638/Prints.md/Evid%C3%AAncias.md)
----------
+Ver pasta: [04_Evidencias]Prints.md/Evidências
 
 ## 🧠 Aprendizados
 - Aprendemos a configurar o ESP8266 na IDE Arduino.
