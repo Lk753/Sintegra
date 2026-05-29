@@ -51,17 +51,17 @@ Ver pasta: [04_Evidencias](https://github.com/Lk753/Sintegra/tree/39dcf510adb5eb
 ___________________________________________________________________________________________________________________________________
 # 🖥️ Configuração do Ambiente
 
-##🛠️ Ambientes de Desenvolvimento (IDEs)
+## 🛠️ Ambientes de Desenvolvimento (IDEs)
    
 - Utilizamos o arduino IDE para escrever, compilar e gravar o código no microcontrolador ESP8266.
 - foi Utilizado po vscode para o desenvolvimento do script em Python e da interface do site.
 
-##🐍 Linguagens e Ferramentas de Software
+## 🐍 Linguagens e Ferramentas de Software
    
 - a Linguagem que utilizamos foi o python para criar o script que recebe os dados do ESP8266 e gerencia as integrações.
 - usamos o mysql para criar o Banco de dados para armazenamento histórico dos dados.
 
-##📦 Instalação de Dependências e Bibliotecas
+## 📦 Instalação de Dependências e Bibliotecas
 
 Para o Python conversar com o ESP8266, com o MySQL e com o Google Sheets, foram usadas as seguintes bibliotecas e os comandos
  
