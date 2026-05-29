@@ -78,18 +78,6 @@ python > Google Sheets
 - from datetime import datetime ( essa biblioteca Pega o horário atual do computador para registrar o momento exato em que a temperatura foi lida)
 - pip install gspread google-auth
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## ⚙️ Configurações realizadas
 - Adição da URL do ESP8266
 - Instalação do pacote
@@ -177,9 +165,12 @@ ________________________________________________________________________________
 | Umidade baixa       | ATENÇÃO   | Envia alerta    |
 | Sensor desconectado | ERRO      | Mensagem na API |
 
- 🔄 Fluxo
+ ## 🔄 Fluxo
 
 Entrada → Processamento → Decisão → Ação → API
+
+Detalhes das Etapas
+
 
 🧩 Variáveis
 
