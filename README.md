@@ -63,11 +63,24 @@ ________________________________________________________________________________
 
 3. 📦 Instalação de Dependências e Bibliotecas
 
-Para o Python conversar com o ESP8266, com o MySQL e com o Google Sheets, foram usadas as seguintes bibliotecas
-
-*qqq
+Para o Python conversar com o ESP8266, com o MySQL e com o Google Sheets, foram usadas as seguintes bibliotecas e os comandos
  
-- 
+python > ESP8266
+- from flask import Flask, request, jsonify
+- pip install fastapi uvicorn ou pip install flask
+
+python > MySQL
+- import mysql.connector
+- pip install mysql-connector-python
+
+python > Google Sheets
+- import gspread
+- from datetime import datetime ( essa biblioteca Pega o horário atual do computador para registrar o momento exato em que a temperatura foi lida)
+- pip install gspread google-auth
+
+
+
+
 
 
 
