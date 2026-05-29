@@ -79,6 +79,18 @@ ________________________________________________________________________________
 
 02_Investigacao_Pinos/  
 
+| PINO |        TIPO         |        
+|------|---------------------|
+| D0   | BOTÃO 1             | 
+| D1   | BOTÃO 2             | 
+| D2   | TEMPERATURA         |
+| D3   | NÃO FOI ENCONTRADO  |
+| D4   |  RGB VERMELHO       |
+| D5   | BUZZER              | 
+| D6   | LED VERMELHA        | 
+| D7   | RGB AZUL            | 
+| D8   | RGB VERDE           | 
+ 
 Arquivo sugerido:  
 
 
