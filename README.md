@@ -49,13 +49,13 @@ Ver pasta: [04_Evidencias](https://github.com/Lk753/Sintegra/tree/39dcf510adb5eb
 - Tivemos contato com APIs e integração com banco de dados.
 - Aprendemos a enviar dados para o Google Sheets.
 ___________________________________________________________________________________________________________________________________
+# 🖥️ Configuração do Ambiente
 
 01_Configuracao/
 Arquivo sugerido:  configuracao.md
 
 Conteúdo esperado:
 
-# 🖥️ Configuração do Ambiente
 
 ## ⚙️ Configurações realizadas
 - Adição da URL do ESP8266
@@ -91,8 +91,6 @@ ________________________________________________________________________________
 | A0   | SIM        | POTENCIÔMETRO      | Apenas entrada analógica  |
 
 
-
-
 ## 🌐 Fontes utilizadas
 - [O que é modelo cliente/servidor](https://www.akamai.com/pt/glossary/what-is-the-client-server-model)
 - [O que é TCP/IP](https://www.techtarget.com/searchnetworking/definition/TCP-IP)
@@ -125,7 +123,17 @@ ________________________________________________________________________________
  
 3. 🖥️ Modelagem de Software (Fluxograma / Máquina de Estados)
 
+🅰️ Lógica do ESP8266 e do Software (Python, MySQL e Google Sheets)
 
+- primeiro: o ESP8266 liga, configura os pinos dos sensores/atuadores e conecta-se á internet local.
+- segundo: o sensor (DHT11) faz a leitura da temperatura e da umidade do ambiente.
+- terceiro: o ESP8266 envia esses valores coletados para o script Python através de uma requisição na rede.
+- quarto: o sistema aguarda um intervalo de tempo definido e repete o ciclo de leitura.
+- quinto: O script Python fica rodando no computador, esperando os dados que o ESP8266 vai enviar.
+- sexto: Assim que o Python recebe a temperatura e a umidade, ele confere se os dados estão corretos.
+- Sétimo: O Python abre uma conexão com o banco de dados MySQL e salva o registro (com data e hora) para manter um histórico local seguro.
+- Oitavo: Logo em seguida, o Python envia os mesmos dados para a API do Google Sheets, inserindo uma nova linha na planilha.
+- nono: O site, que está conectado à planilha do Google Sheets, atualiza a tela automaticamente para mostrar os novos gráficos e temperaturas para quem estiver navegando.
 
 📊 Regras definidas
  
