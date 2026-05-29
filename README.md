@@ -176,7 +176,7 @@ Detalhes das Etapas
 - Ação: O Python executa um comando de inserção (INSERT) para salvar os dados recebidos no banco de dados local MySQL.
 - API: O Python aciona as APIs do Google (Sheets e Drive) via gspread para enviar os dados para a planilha na nuvem, atualizando automaticamente o site integrado que exibe os gráficos para o usuário.
 
-🧩 Variáveis
+## 🧩 Variáveis
 
 - Temperatura → Capturada pelo sensor DHT11
 - Umidade → Capturada pelo sensor DHT11
