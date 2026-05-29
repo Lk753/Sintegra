@@ -63,7 +63,11 @@ ________________________________________________________________________________
 
 3. 📦 Instalação de Dependências e Bibliotecas
 
-- Para po Python converse com o ESP8266, com o MySQL e com o Google Sheets, foram usadas as seguintes bibliotecas
+Para o Python conversar com o ESP8266, com o MySQL e com o Google Sheets, foram usadas as seguintes bibliotecas
+
+*qqq
+ 
+- 
 
 
 
