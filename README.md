@@ -54,7 +54,7 @@ ________________________________________________________________________________
 ## 🛠️ Ambientes de Desenvolvimento (IDEs)
    
 - Utilizamos o arduino IDE para escrever, compilar e gravar o código no microcontrolador ESP8266.
-- foi Utilizado po vscode para o desenvolvimento do script em Python e da interface do site.
+- foi Utilizado o vscode para o desenvolvimento do script em Python e da interface do site.
 
 ## 🐍 Linguagens e Ferramentas de Software
    
