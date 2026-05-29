@@ -117,9 +117,9 @@ O primeiro componente que identificamos foi o segundo botão de acionamento e lo
 (print/foto/teste)
 __________________________________________________________________________________________________________________________________
 
-🧠 Modelagem do Sistema
+## 🧠 Modelagem do Sistema
 
-## 1. 🗺️ Arquitetura Geral do Sistema
+1. 🗺️ Arquitetura Geral do Sistema
 
   O sistema é baseado no microcontrolador ESP8266, responsável por realizar a leitura dos dados de temperatura e umidade. Esses dados são enviados para um script em Python, que atua como intermediário, realizando o armazenamento e a persistência das informações em um banco de dados MySQL e, simultaneamente, integrando e atualizando as planilhas do Google Sheets. Por fim, o Google Sheets serve como fonte de dados para um site (interface web), onde os resultados de temperatura e umidade são exibidos em tempo real para o usuário.
  
