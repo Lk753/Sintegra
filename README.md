@@ -37,7 +37,7 @@ Controle de mudanças e evolução do projeto
 __________________________________________________________
 
 ## 🔁 Evolução do Projeto
-Ver pasta: [05_Atualizacoes](https://github.com/Lk753/Sintegra/tree/main/Atualiza%C3%A7%C3%B5es.md)
+Ver pasta: [05_Atualizacoes](https://github.com/Lk753/Sintegra/tree/8e74015cb4571359a321730dbcd30e30fd371157/atualiza%C3%A7%C3%B5es.md)
 
 ---------
 ## 📸 Evidências
