@@ -75,12 +75,14 @@ Conteúdo esperado:
 - Problemas na leitura inicial do sensor DHT11.
 __________________________________________________________________________________________________________________________________
 
-02_Investigacao_Pinos/  
-Arquivo sugerido:  investigacao.md
-
-Conteúdo esperado:
-
 # 🔌 Investigação das Portas
+
+02_Investigacao_Pinos/  
+
+Arquivo sugerido:  
+
+
+
 
 ## 🌐 Fontes utilizadas
 - [O que é modelo cliente/servidor](https://www.akamai.com/pt/glossary/what-is-the-client-server-model)
