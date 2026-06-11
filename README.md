@@ -231,19 +231,6 @@ Conteúdo essencial:
 # 🔁 Atualizações do Projeto
 - Pasta de [05_Atualizacoes](https://github.com/Lk753/Sintegra/tree/b20a3076980b851cd5848ef94b98806f3d1bb427/atualiza%C3%A7%C3%B5es.md)
 
-## v1.0
-- Configuração inicial
-
-## v1.1
-- Investigação de pinos
-- Identificação de erro no pino D3
-
-## v1.2
-- Alteração de pino devido a falha
-
-## v2.0
-- Definição da lógica do sistema
-
 ---
 ## 📌 Melhorias realizadas
 Descrever mudanças importantes
