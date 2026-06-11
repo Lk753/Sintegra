@@ -79,6 +79,44 @@ python > Google Sheets
 - from datetime import datetime ( essa biblioteca Pega o horário atual do computador para registrar o momento exato em que a temperatura foi lida)
 - pip install gspread google-auth
 
+ 
+### 🔧 Resolução de Dependências e Ambiente Python
+
+#### Bibliotecas Utilizadas no Projeto
+- **Flask:** Framework web minimalista em Python utilizado para criar rotas, APIs e disponibilizar os serviços do projeto.
+- **Gspread:** Biblioteca cliente para interagir com a API do Google Planilhas (Google Sheets).
+- **OAuth2Client:** Ferramenta utilizada para realizar a autenticação segura com os serviços do Google Cloud.
+- **PyODBC:** Módulo que permite a conexão do Python a bancos de dados relacionais utilizando drivers ODBC.
+
+#### Erros Enfrentados e Solução
+
+**Problema:** `ModuleNotFoundError: No module named 'biblioteca'`
+
+**Causas:**
+1. Bibliotecas não instaladas na máquina/ambiente
+2. Conflito entre o interpretador Python do VS Code e o terminal global do sistema operacional
+3. Tentativa de executar código Python diretamente no terminal PowerShell
+
+**Solução Aplicada:**
+Para garantir que as bibliotecas fossem instaladas no interpretador correto, use um dos métodos abaixo:
+
+**Opção 1:** Instale via `requirements.txt` (recomendado)
+```bash
+pip install -r requirements.txt
+```
+
+**Opção 2:** Instale manualmente no terminal integrado do VS Code:
+```bash
+pip install flask gspread oauth2client pyodbc mysql-connector-python google-auth
+```
+
+**Opção 3:** Automação via script Python (injetar no topo do arquivo principal):
+```python
+import sys
+import subprocess
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+   ```
+  
 ## ⚙️ Configurações realizadas
 - Adição da URL do ESP8266
 - Instalação do pacote
@@ -244,7 +282,7 @@ Este espaço serve para a gente acompanhar a evolução do projeto: o que foi me
 
 ---
 
-## 🚨 Problemas que rolaram e como resolvemos
+## 🚨 Problemas que ocorreram e como resolvemos
 
 
 ### 🔍 O que deu errado?
