@@ -223,13 +223,9 @@ imagem1.jpg
 teste_led.png
 video_link.txt
 __________________________________________________________________________________________________________________________________
-
-05_Atualizacoes/
-Arquivo sugerido:   atualizacoes.md
-
 Conteúdo essencial:
 # 🔁 Atualizações do Projeto
-- Pasta de [05_Atualizacoes](https://github.com/Lk753/Sintegra/tree/b20a3076980b851cd5848ef94b98806f3d1bb427/atualiza%C3%A7%C3%B5es.md)
+- Pasta de [atualizacoes.md](https://github.com/Lk753/Sintegra/tree/b20a3076980b851cd5848ef94b98806f3d1bb427/atualiza%C3%A7%C3%B5es.md)
 
 ---
 ## 📌 Melhorias realizadas
