@@ -134,7 +134,7 @@ O primeiro componente que identificamos foi o segundo botão de acionamento e lo
 - Problemas na leitura inicial do sensor DHT11.
 
 ##  Evidências 📸
-(print/foto/teste)
+Pasta de : [Prints.md](https://github.com/Lk753/Sintegra/tree/e67c79c5730acc82419657f45e9de0022ee92df4/Prints.md)
 __________________________________________________________________________________________________________________________________
  
 ##  Modelagem do Sistema 🧠
