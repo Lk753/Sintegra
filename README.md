@@ -227,9 +227,40 @@ Conteúdo essencial:
 # 🔁 Atualizações do Projeto
 - Pasta de [atualizacoes.md](https://github.com/Lk753/Sintegra/tree/b20a3076980b851cd5848ef94b98806f3d1bb427/atualiza%C3%A7%C3%B5es.md)
 
+# 📌 O que mudou e o que corrigimos no projeto
+
+Este espaço serve para a gente acompanhar a evolução do projeto: o que foi melhorado no código, como os componentes de hardware estão conversando entre si e, claro, os perrengues que surgiram e como resolvemos cada um.
+
 ---
-## 📌 Melhorias realizadas
+
+## 🚀 Melhorias que realizamos
+
+-  **Geral no Arduino:** Demos uma bela limpada na estrutura do código do Arduino para deixar tudo mais organizado e fácil de ler.
+-  **Integração Python + API:** Mexemos na estrutura do código em Python para deixar a comunicação com a API mais rápida e fluida.
+-  **Novas funções para os componentes:**
+  * Criamos uma função dedicada para o **Buzzer** funcionar direitinho.
+  * Adicionamos o código para fazer a leitura do **Potenciômetro**.
+  * Integramos o sensor de temperatura **DHT11** com o **Buzzer** para eles trabalharem juntos.
+
+---
+
+## 🚨 Problemas que rolaram e como resolvemos
 
 
-## 🚨 Problemas e soluções
-Explicar erros e como foram corrigidos
+### 🔍 O que deu errado?
+1. A Arduino IDE simplesmente não reconhecia ou não conseguia carregar o código para a placa **ESP8266 D1**.
+2. O **Buzzer** estava conectado na placa, mas não fazia nada porque faltava lógica para ele no código.
+3. O sensor **DHT11** estava lendo os dados de temperatura e umidade corretamente no monitor serial, mas essas informações não eram enviadas de jeito nenhum para a planilha do **Google Sheets**.
+
+### 🛠️ Solução dos Problemas
+
+1. **Configuração do Ambiente de Desenvolvimento:**
+   Identificamos que a falha inicial decorria de uma incompatibilidade na configuração da IDE. Após mapear e selecionar a porta COM correta no sistema e definir o modelo exato da placa (`ESP8266 D1`), o upload do código foi concluído com sucesso.
+
+2. **Ativação do Feedback Sonoro:**
+   Implementamos a sinalização sonora no hardware. Configuramos o **Buzzer** para emitir um bipe rápido sempre que o sensor `DHT11` iniciar uma nova leitura de temperatura, garantindo uma resposta auditiva clara sobre o status de operação do dispositivo.
+
+3. **Ajuste no Fluxo de Dados (Integração Python/API):**
+   O fluxo de envio das informações para a nuvem foi corrigido e otimizado em duas etapas fundamentais:
+   * **Autenticação do Google Cloud:** Corrigimos o caminho de diretório do arquivo JSON de credenciais no script Python, restabelecendo a comunicação e a autenticação com o serviço.
+   * **Tratamento e Formatação de Dados:** Ajustamos a manipulação das variáveis para garantir que a biblioteca `gspread` recebesse os dados devidamente tipados (convertidos para *string* ou *float*). Após essa validação prévia ao método `append_row()`, a alimentação da planilha passou a ocorrer em tempo real e sem interrupções.
