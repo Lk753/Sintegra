@@ -38,11 +38,11 @@ Controle de mudanças e evolução do projeto
 __________________________________________________________
 
 ## Evolução do Projeto
-Ver pasta: [05_Atualizacoes](https://github.com/Lk753/Sintegra/tree/8e74015cb4571359a321730dbcd30e30fd371157/atualiza%C3%A7%C3%B5es.md)
+Ver pasta: [Atualizacoes.md](https://github.com/Lk753/Sintegra/tree/8e74015cb4571359a321730dbcd30e30fd371157/atualiza%C3%A7%C3%B5es.md)
 
 ---------
 ##  Evidências 📸
-Ver pasta: [04_Evidencias](https://github.com/Lk753/Sintegra/tree/39dcf510adb5ebcf8d5ec3e36a9b08835b26131c/Prints.md)
+Ver pasta: [Prints.md](https://github.com/Lk753/Sintegra/tree/39dcf510adb5ebcf8d5ec3e36a9b08835b26131c/Prints.md)
 
 ##  Aprendizados 🧠
 - Aprendemos a configurar o ESP8266 na IDE Arduino.
