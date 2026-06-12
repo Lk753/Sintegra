@@ -302,3 +302,11 @@ Este espaço serve para a gente acompanhar a evolução do projeto: o que foi me
    O fluxo de envio das informações para a nuvem foi corrigido e otimizado em duas etapas fundamentais:
    * **Autenticação do Google Cloud:** Corrigimos o caminho de diretório do arquivo JSON de credenciais no script Python, restabelecendo a comunicação e a autenticação com o serviço.
    * **Tratamento e Formatação de Dados:** Ajustamos a manipulação das variáveis para garantir que a biblioteca `gspread` recebesse os dados devidamente tipados (convertidos para *string* ou *float*). Após essa validação prévia ao método `append_row()`, a alimentação da planilha passou a ocorrer em tempo real e sem interrupções.
+
+
+PROBLEMAS COM A CONTA PRINCIPAL DO PROJETO:
+
+<img width="1920" height="1080" alt="Captura de tela 2026-06-12 082752" src="https://github.com/user-attachments/assets/5944c0ff-b6f7-427c-9132-d1bdff1190e0" />
+
+<img width="1920" height="1080" alt="Captura de tela 2026-06-12 083040" src="https://github.com/user-attachments/assets/93cd644b-b4e7-40b0-9460-5fae7fabae6c" />
+
