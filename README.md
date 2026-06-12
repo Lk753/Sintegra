@@ -304,9 +304,11 @@ Este espaço serve para a gente acompanhar a evolução do projeto: o que foi me
    * **Tratamento e Formatação de Dados:** Ajustamos a manipulação das variáveis para garantir que a biblioteca `gspread` recebesse os dados devidamente tipados (convertidos para *string* ou *float*). Após essa validação prévia ao método `append_row()`, a alimentação da planilha passou a ocorrer em tempo real e sem interrupções.
 
 
-PROBLEMAS COM A CONTA PRINCIPAL DO PROJETO:
+## PROBLEMAS COM A CONTA PRINCIPAL DO PROJETO:
 
+Durante a fase final do projeto, a conta Google utilizada para o armazenamento das informações no Google Sheets foi desativada. Como consequência, foi necessário migrar toda a integração para uma nova conta, realizando novamente as configurações e permissões necessárias para garantir o correto funcionamento do sistema.
 <img width="1920" height="1080" alt="Captura de tela 2026-06-12 082752" src="https://github.com/user-attachments/assets/5944c0ff-b6f7-427c-9132-d1bdff1190e0" />
 
+Além disso, foi enviada uma contestação solicitando a reativação da conta desativada. Enquanto o processo de análise era realizado, a equipe optou por configurar uma nova conta Google para evitar atrasos no cronograma e garantir a continuidade do desenvolvimento do projeto.
 <img width="1920" height="1080" alt="Captura de tela 2026-06-12 083040" src="https://github.com/user-attachments/assets/93cd644b-b4e7-40b0-9460-5fae7fabae6c" />
 
